@@ -7,14 +7,13 @@
     <link rel="stylesheet" href="./style.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-        html{
-            background-color:beige;
-        }
+        
         body{
             background-color:#EAE7DC;
             padding-left: 5%;
             padding-bottom: 2rem;
-            
+            border: 10px groove #c4bea7 ;
+            padding-right: 5%;
         }
         h2{
             color: brown;
@@ -24,9 +23,10 @@
             font-family: serif;
             font-weight: 400;
             color: #0EB5A2;
+            font-weight: bold;
         }
         p{
-            font-size: 120%;
+            font-size: 100%;
             font-family:Georgia, 'Times New Roman', Times, serif;
         }
         h3{
@@ -37,19 +37,40 @@
             display: inline-block;
             height: 500px;
             width: 500px;
-            border: 10px solid #E3DDDB;
+            border: dashed #E3DDDB;
             padding: 2rem;
         }
+        @media (max-width: 800px) {
+        body{
+            background-color:#EAE7DC;
+            padding-left: 5%;
+            margin-inline-end: -50%;
+            padding-bottom: 2rem;
+            border: 10px groove #c4bea7 ;  
+        }
+        .project{
+            display: inline-block;
+            height: 500px;
+            width: 400px;
+            border: 1% dashed #E3DDDB;
+            padding: 2rem;
+        }
+        p{
+            font-size: 100%;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+
+    }
     </style>
 </head>
-<body>
+<body >
     <!-- Header Section -->
     <div class="container">
         <header class="d-flex justify-content-center py-3">
           <ul class="nav nav-pills">
-            <li class="nav-item"><a href="./Movie ranking.png" class="nav-link" aria-current="page">About me</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact me</a></li>
+            <li class="nav-item "><a href="./about.html" class="nav-link text-secondary" aria-current="page">About me</a></li>
+            <li class="nav-item"><a href="./project.html" class="nav-link text-secondary">Projects</a></li>
+            <li class="nav-item"><a href="./contact1.html" class="nav-link text-secondary">Contact me</a></li>
           </ul>
         </header>
       </div>
@@ -57,12 +78,14 @@
     <!-- Hero Section -->
     <section id="hero">
         <h1 style="text-align: center;">Welcome to my Personal Portfolio!</h1>
+        <hr>
         <img style="height: 200px; width: 200px; border-radius: 2rem;" src="./Profile photo1.jpg" alt="Professional Photo">
-        
+        <br>
         <p>I'm <b>Sai Prasad Handigund</b>,<br>
             a passionate web developer who builds innovative and user-friendly websites.</p>
-        <a href="https://ww1.5hiidude.co/">Learn More</a>
+        <a href="./learn.html">Learn More</a>
     </section>
+    <hr>
 
     <!-- Skills Section -->
      <br/>
@@ -76,58 +99,80 @@
             <li>UI/UX Design</li>
         </ul>
     </section>
-
+    <hr>
     <!-- Projects Section -->
     <section id="projects">
         <h2>My Projects</h2>
-        <div class="project-grid">
+        <div class="project-flex">
             <div class="project">
                 <h3 style="color: darkblue;">Project 1: Birthday Invite Project </h3>
                 <img style="height:40%; width: 40%;" src="./birthday.png" alt="Project 1 Image">
                 <br>
-                <a href="../Web developing projects/3.4 Birthday Invite Project/index.html">Birthday Project</a>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <a href="./indexbday.html">Birthday Project</a>
+                <p>Create a simple birthday invitation website with essential details. Features include a prominent heading, relevant image, list of items to bring, and Google Maps link. Built with HTML5, CSS, and basic web development techniques, the site prioritizes simplicity, clarity, and visual appeal to effectively communicate celebration details to guests.</p>
             </div>
             <div class="project">
                 <h3 style="color: darkblue;">Project 2: Movie ranking project</h3>
                 <img style="height:40%; width: 40%;" src="./Movie ranking.png" alt="Project 2 Image">
                 <br>
-                <a href="../Web developing projects/2.4+Movie+Ranking+Project/2.4 Movie Ranking Project/index.html">Movie Ranking Project</a>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                <a href="./indexmovie.html">Movie Ranking Project</a>
+                <p>Create a simple website showcasing a personal ranking of recently watched movies, focusing on the top 3 up to May 2023. The site features a header, list of top movies with summaries, quotes, and notable details, using HTML5 and CSS for a clean, minimalistic design with a focus on readability.</p>
             </div>
+            <br/>
             <div class="project">
                 <h3 style="color: darkblue;">Project 3: Motivational Meme </h3>
                 <img style="height:40%; width: 40%;" src="./Motivational meme.png" alt="Project 3 Image">
                 <br>
-                <a href="../Web developing projects/6.4 Motivation Meme Project/index.html">Motivational Meme Project</a>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                <a href="./indexmotv.html">Motivational Meme Project</a>
+                <p>Create a humorous web page featuring a relatable meme of Daenerys holding an egg, captioned about finding the perfect avocado. Use HTML, CSS, and an external stylesheet with the Libre Baskerville font to design a clean, minimalistic page with a bold title, making it shareable and laugh-out-loud funny. </p>
             </div>
             <div class="project">
-                <h3 style="color: darkblue;">Project 4: Using Flexbox </h3>
+                <h3 style="color: darkblue;">Project 4:Flexbox Project</h3>
                 <img style="height:40%; width: 40%;" src="./Flexbox.png" alt="Project 4 Image">
                 <br/>
-                <a href="../Web developing projects/6.4 Motivation Meme Project/index.html">Motivational Meme Project</a>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                <a href="./indexflex.html">Price tag project using Flexbox</a>
+                <p>Create a responsive pricing table using HTML, CSS, and flexbox. Design a clean, modern table with three plans (Basic, Standard, Premium) featuring clear hierarchy and prominent CTAs. Utilize the "Sono" font and adapt to different screen sizes, stacking vertically on small screens and horizontally on large screens. </p>
             </div>
-            <!-- Add more projects here -->
+            <br/>
+            <div class="project">
+                <h3 style="color: darkblue;">Project 5: CSS Flag Project </h3>
+                <img style="height:40%; width: 40%;" src="./CSS flag project.png" alt="Project 5 Image">
+                <br/>
+                <a href="./indexflg.html">CSS Flag Project</a>
+                <p>Design a CSS flag project replicating the Laotian flag. Use HTML and CSS to create a 900x600px flag with a red background, a blue horizontal stripe, and a white circle in the center. Ensure accurate colors and proportions, and write clean, organized code. </p>
+            </div>
+            <div class="project">
+                <h3 style="color: darkblue;">Project 6: Portfolio using HTML </h3>
+                <img style="height:40%; width: 40%;" src="./html potfolio.png" alt="Project 6 Image">
+                <br/>
+                <a href="./indexport.html">Simple Portfolio using HTML only</a>
+                <p>This personal portfolio website showcases my skills and experience as a web developer. It features a brief summary, education background, and certifications. The website also highlights my projects, including a movie ranking project and birthday invitation project, with links to each project and a contact page for inquiries </p>
+            </div>
+    
         </div>
     </section>
+    <hr>
+    <!-- FOOTER -->
+    <div class="container">
+        <footer class="py-5">
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2024 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="https://twitter.com/satvik_ph45"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+              </svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/satvik_ph45/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="https://www.linkedin.com/in/sai-prasad-handigund-02a507268"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+              </svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Get in Touch</h2>
-        <p>Want to collaborate or discuss a project? Send me a message!</p>
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <br/>
-            <textarea placeholder="Message"></textarea>
-            <br/>
-            <button>Send</button>
-        </form>
-    </section>
 
-    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
